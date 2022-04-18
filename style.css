@@ -1,0 +1,157 @@
+:root{
+    --tipo-principal:'Roboto Mono', monospace;
+    --blanco: rgb(255, 255, 255);
+}
+
+body {
+    background-image: url("cuadricula_distorsionada_negra.png");
+    font-family: var(--tipo-principal); 
+}
+
+main {
+    margin-top: 70px;
+    margin-left: 300px;
+    margin-right: 300px;
+    backdrop-filter: blur(2.5px);
+    border-radius: 20px;
+    padding: 10px 30px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.801);
+    flex-direction: column;
+}
+
+.titulo {
+    background-color: rgba(255, 255, 255, 0.932);
+    border-radius: 10px;
+}
+
+.parrafo {
+   margin: 5px 0px;
+   background-color: var(--blanco);
+   border: 1px solid;
+   border-radius: 10px;
+}
+
+.text-area {
+    border-radius: 5px;
+    resize: none;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.767);
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#text-cifrador {
+    background-color: rgba(19, 44, 51, 0.836);
+    color: var(--blanco);
+}
+
+#text-cifrador::placeholder {
+    color: var(--blanco);
+    font-size: 20px;
+}
+
+.centrar#error {
+    margin-top: 5px;
+    margin-left: 3px;
+    color: rgb(255, 78, 78);
+    justify-content: center;
+    font-size: 14px;
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+.centrar {
+    display: flex;
+    justify-content: center;
+}
+
+.boton {
+    font-family: var(--tipo-principal);
+    font-size: 20px;
+    padding: 10px;
+    margin: 5px;
+    border: 2px solid rgba(0, 0, 0, 0.596);
+    border-radius: 10px;
+    width: 180px;
+}
+
+#boton-encriptar {
+    background-color: rgba(18, 109, 130, 0.897);
+    color: var(--blanco);
+}
+
+#boton-encriptar:hover{
+    background-color: rgb(216, 227, 231);
+    color: rgba(18, 109, 130, 0.562);
+}
+
+#boton-desencriptar {
+    background-color: rgba(107, 190, 209, 0.829);
+    color: rgb(19, 44, 51);
+}
+
+#boton-desencriptar:hover {
+    background-color: rgb(19, 44, 51);
+    color:rgb(18, 110, 130);
+}
+
+#text-resultado {
+    background-color: rgba(255, 255, 255, 0.801);
+}
+
+#text-resultado::placeholder {
+    color: rgba(3, 3, 3, 0.897);
+    font-size: 20px;
+}
+
+#boton-copiar:hover {
+    background-color: black;
+    color: var(--blanco);
+    border: 2px solid rgba(255, 255, 255, 0.596);
+}
+
+#boton-limpiar {
+    background-color: rgb(136, 136, 136);
+    color: var(--blanco);
+}
+#boton-limpiar:hover {
+    background-color: var(--blanco);
+    color: black;
+    border: 2px solid rgba(0, 0, 0, 0.596);
+}
+
+footer {
+   margin-top: 40px;
+   background-color: var(--blanco);
+   border: 1px solid;
+   border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+    main {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 800px) {
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 500px) {
+    .botones {
+        flex-direction: column;
+    }
+    
+    .boton {
+        width: 100%;
+    }
+    
+    main {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+}
